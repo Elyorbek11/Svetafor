@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1600px;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+}
+.svetafor{
+    width: 200px;
+    height: 600px;
+    border-radius: 15px;
+    background-color: rgb(36, 35, 35);
+}
+.red-lamp,.yellow-lamp,.green-lamp{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 10px;
+    animation-iteration-count: 1;
+}
+.red-lamp{
+    animation-name: qizil;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+.yellow-lamp{
+    animation-name: sariq;
+    animation-duration: 5s;
+    animation-delay: 10s;
+}
+.green-lamp{
+    animation-name: yashil;
+    animation-duration: 5s;
+    animation-delay: 15s;
+}
+@keyframes qizil{
+    to{
+        background-color: red;
+    }
+}
+@keyframes sariq{
+    to{
+        background-color: yellow;
+    }
+}
+@keyframes yashil{
+    to{
+        background-color: green;
+    }
+}
